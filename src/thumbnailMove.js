@@ -19,7 +19,7 @@ function thumnailMove() {
 
         curImg++;
 
-        if (curImg === (img.length -)) {
+        if (curImg === (img.length - 1)) {
             curImg = 0;
         }
 
