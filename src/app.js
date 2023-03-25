@@ -1,3 +1,3 @@
 import thumbnailMove from './thumbnailMove.js';
 
-window.addEventListener('DOMContentLoaded', thumbnailMove)
+window.addEventListener('DOMContentLoaded', thumbnailMove())
