@@ -15,13 +15,13 @@
             <h1><a href="#"><img src="./src/logo.png"></a></h1>
             <ul>
                 <li><a href="#">BOARD</a></li>
-                <li><a href="#">CONTENTS</a></li>
+                <li><a href="#introduce">CONTENTS</a></li>
             </ul>
         </nav>
     </header>
 
     <main role="main" id="main">
-        <article>
+        <article class="portThumbnail">
             <section class="thumbnail-area">
                 <ul class="img-slides">
                     <li class="slide"><img src="thumbnail/1.jpg" alt="prj1"></li>
@@ -39,14 +39,42 @@
         </article>
 
         <article class="contents-area">
-            <section>
-                introduce
+            <section id="introduce"> <!--flexContainer-->
+                <div id="profile" class="profile">
+                    <h3>Profile</h3>
+                    <ul>
+                        <li><h4>이름: 정주현</h4></li>
+                        <li><h4>생년월일: 0000년 00월 00일</h4></li>
+                        <li><h4>이메일: nb3065@gmail.com</h4></li>
+                        <li><h4>연락처: 010-0000-0000</h4></li>
+                    </ul>
+                </div>
+                <div id="skills" class="profile">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li><h4>HTML</h4></li>
+                        <li><h4>CSS</h4></li>
+                        <li><h4>JavaScript</h4></li>
+                    </ul>
+                </div>
+                <div id="education" class="profile">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><h4>0000.03 ~ 0000.02 @@초등학교 졸업</h4></li>
+                        <li><h4>0000.03 ~ 0000.02 @@중학교 졸업</h4></li>
+                        <li><h4>0000.03 ~ 0000.02 @@고등학교 졸업</h4></li>
+                        <li><h4>0000.03 ~ 0000.02 @@대학교 @@학과 졸업</h4></li>
+                    </ul>
+                </div>
+                <div id="career" class="profile">
+                    <h3>Career & Toy-Project</h3>
+                    <ul>
+                        <li><h4>엘리스 AI트랙 7기 교육중</h4></li>
+                    </ul>
+                </div>
             </section>
-            <section>
-                project
-            </section>
-            <section>
-                stack
+            <section id="side-project">
+                
             </section>
         </article>
     </main>

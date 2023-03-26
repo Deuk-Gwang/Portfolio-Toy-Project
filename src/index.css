@@ -50,6 +50,11 @@ main {
     margin-top: 20px;
 }
 
+main .portThumbnail {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 main .thumbnail-area {
     width: 840px;
     height: 400px;
@@ -121,6 +126,43 @@ main .contents-area {
     clear: both;
 }
 
+section#introduce {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+section#introduce ul {
+    list-style-type: none;
+}
+
+main .profile {
+    border: #dadada 1px solid;
+    border-left: #ff5959 5px solid;
+    border-radius: 10px;
+
+    height: 150px;
+
+    flex: 1 1 300px;
+    justify-content: space-around;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 5px 10px 10px;
+}
+
+main .profile h3 {
+    font-size: 20px;
+    border-bottom: #dadada 1px solid;
+    padding: 0 0 5px 10px;
+    color: #2b2b2b;
+}
+
+main .profile h4 {
+    font-size: 15px;
+    padding: 5px 0 0 10px;
+    font-weight: 300;
+}
 /* Footer Area */
 footer {
     margin-top: 40px;

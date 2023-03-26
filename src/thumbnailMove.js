@@ -5,24 +5,21 @@ function thumnailMove() {
 
     var curImg = 0;
 
-    setInterval(function() {
+    setInterval(() => {
         var from = -(840 * curImg);
         var to = from - 840;
         imgUl.animate({
             marginLeft: [from + "px", to + "px"]
         }, {
-            duration: 500,
-            easing: "ease",
+            duration: 300,
+            easing: "ease-in-out",
             iterations: 1,
             fill: "both"
         });
 
         curImg++;
 
-        if (curImg === (img.length - 1)) {
-            curImg = 0;
-        }
-
+        if (curImg === (img.length - 1)) curImg = 0;
     }, 3000);
 }
 
