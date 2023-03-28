@@ -69,7 +69,6 @@ main .thumbnail-area .img-slides {
 }
 
 main .slide {
-    float: left;
     width: 840px;
     height: 400px;
     list-style: none;

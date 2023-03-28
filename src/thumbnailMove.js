@@ -6,10 +6,10 @@ function thumnailMove() {
     var curImg = 0;
 
     setInterval(() => {
-        var from = -(840 * curImg);
-        var to = from - 840;
+        var from = -(400 * curImg);
+        var to = from - 400;
         imgUl.animate({
-            marginLeft: [from + "px", to + "px"]
+            marginTop: [from + "px", to + "px"]
         }, {
             duration: 300,
             easing: "ease-in-out",
