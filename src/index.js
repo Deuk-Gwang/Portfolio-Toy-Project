@@ -1,5 +1,8 @@
 import thumbnailMove from './thumbnailMove.js';
 
+// ScrollAction 유튜브 코딩애플 참고 
+// https://youtu.be/e4Afka5IOZ8
+
 // header (action trigger)
 const trigger = document.querySelector("header");
 const introEnd = document.querySelector("#intro-end")
@@ -49,7 +52,7 @@ const opacityAction = new IntersectionObserver((e) => {
         }
     })
 })
-// body 배경색 action
+// body 배경색 action (introEnd가 먼저 실행되기 때문에 기본 배경색이 white로 유지);
 triggerAction.observe(introEnd);
 triggerAction.observe(trigger);
 
