@@ -18,6 +18,7 @@ const introName = document.getElementById('intro-name');
 const introEducation = document.getElementById('intro-education');
 const introSkills = document.getElementById('intro-skills');
 const introCareer = document.getElementById('intro-career');
+const endTrigger = document.getElementById('profile')
 
 /** Trigger가 Observe False상태로 변경시 body, div 배경색 변경 */
 const triggerAction = new IntersectionObserver((e) => {
@@ -42,12 +43,18 @@ const triggerAction = new IntersectionObserver((e) => {
 const opacityAction = new IntersectionObserver((e) => {
     e.forEach((elem) => {
         if (elem.isIntersecting) {
-            console.log(elem,'등장')
-            // elem.target.style.color = "white";
             elem.target.style.opacity = 1;
         } else {
-            console.log(elem,'퇴장')
-            // elem.target.style.color = "white";
+            elem.target.style.opacity = 0;
+        }
+    })
+})
+
+const divMoveAction = new IntersectionObserver((e) => {
+    e.forEach((elem) => {
+        if (elem.isIntersecting) {
+            elem.target.style.opacity = 1;
+        } else {
             elem.target.style.opacity = 0;
         }
     })
@@ -55,6 +62,9 @@ const opacityAction = new IntersectionObserver((e) => {
 // body 배경색 action (introEnd가 먼저 실행되기 때문에 기본 배경색이 white로 유지);
 triggerAction.observe(introEnd);
 triggerAction.observe(trigger);
+
+// profile body opacity action
+divMoveAction.observe(introEnd);
 
 // h2 투명도 action
 opacityAction.observe(introName);
