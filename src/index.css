@@ -123,6 +123,7 @@ main .text-area a:hover {
 
 main .contents-area {
     clear: both;
+    /* height: 8000px; */
 }
 
 section#introduce {
@@ -189,3 +190,8 @@ footer a {
 footer strong {
     font-size: 14px;
 }
+
+/* .toBlack {
+    transition: background-color 0.5s linear;
+    background-color: black;
+} */
