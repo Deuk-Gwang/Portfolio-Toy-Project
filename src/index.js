@@ -50,8 +50,8 @@ const opacityAction = new IntersectionObserver((e) => {
     })
 })
 // body 배경색 action
-triggerAction.observe(trigger);
 triggerAction.observe(introEnd);
+triggerAction.observe(trigger);
 
 // h2 투명도 action
 opacityAction.observe(introName);
